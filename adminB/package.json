@@ -1,0 +1,83 @@
+{
+  "name": "iview-admin",
+  "version": "2.0.0",
+  "author": "Lison <lison.modern@gmail.com>",
+  "private": false,
+  "scripts": {
+    "dev": "vue-cli-service serve --opens",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service build --mode test",
+    "lint": "vue-cli-service lint",
+    "dll": "webpack -p --progress --config webpack.dll.conf.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "clipboard": "^2.0.0",
+    "codemirror": "^5.38.0",
+    "countup": "^1.8.2",
+    "cropperjs": "^1.2.2",
+    "echarts": "^4.0.4",
+    "element-ui": "^2.4.11",
+    "html2canvas": "^1.0.0-rc.5",
+    "view-design": "^4.0.0",
+    "iview-area": "^1.5.17",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.22.2",
+    "simplemde": "^1.11.2",
+    "sortablejs": "^1.7.0",
+    "tinymce": "^4.9.2",
+    "vue": "^2.5.10",
+    "vue-dplayer": "^0.0.10",
+    "vue-i18n": "^7.8.0",
+    "vue-kindeditor": "^0.4.5",
+    "vue-router": "^3.0.1",
+    "vue2-org-tree": "^1.2.1",
+    "vuedraggable": "^2.16.0",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.13.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-unit-mocha": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.0-beta.10",
+    "@vue/test-utils": "^1.0.0-beta.10",
+    "chai": "^4.1.2",
+    "eslint-plugin-cypress": "^2.0.1",
+    "image-webpack-loader": "^6.0.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "lint-staged": "^6.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "vue-template-compiler": "^2.5.13",
+    "vue-waterfall-easy": "^2.4.4",
+    "webpack-bundle-analyzer": "^3.5.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "description": "<p align=\"center\">     <a href=\"https://www.iviewui.com\">         <img width=\"200\" src=\"https://file.iviewui.com/logo-new.svg\">     </a> </p>",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
